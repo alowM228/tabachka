@@ -1,0 +1,29 @@
+﻿<Window x:Class="Tabachka.kasir"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tabachka"
+        mc:Ignorable="d"
+        Title="kasir" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="86*"/>
+            <RowDefinition Height="281*"/>
+            <RowDefinition Height="67*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="323*"/>
+            <ColumnDefinition Width="152*"/>
+            <ColumnDefinition Width="186*"/>
+            <ColumnDefinition Width="139*"/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid x:Name = "Aqw"  SelectionChanged="Aqw_SelectionChanged" Margin="0,12,0,2" Grid.ColumnSpan="4" Grid.Row="1"/>
+
+        <Button Content="Приход" HorizontalAlignment="Left" Margin="2,3,0,0" VerticalAlignment="Top" Height="53" Width="127" FontSize="22" Click="Button_Click" Grid.Column="3" Grid.Row="2"/>
+        <Label Content="Касир" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="88" Width="140" FontSize="48" Grid.RowSpan="2" Grid.Column="1"/>
+        <Button Content="Уход" HorizontalAlignment="Left" Margin="10,3,0,0" Grid.Row="2" VerticalAlignment="Top" Height="53" Width="127" FontSize="24" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
